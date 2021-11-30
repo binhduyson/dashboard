@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Admin Manager
+    </title>
+    <link rel="shortcut icon" href="./images/logo-mb.png" type="image/png">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Đăng nhập</h2>
+                    <div class="input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" value="Đăng nhập" class="btn solid" />
+                    <p class="social-text">Hoặc bạn có thể đăng nhập bằng tài khoản</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon social-facebook">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="social-icon social-twiter">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="social-icon social-google">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                        <a href="#" class="social-icon social-likedin">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Đăng ký</h2>
+                    <div class="input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" placeholder="Confirm Password" />
+                    </div>
+                    <input type="submit" class="btn" value="Đăng ký" />
+                    <p class="social-text">Hoặc bạn có thể đăng ký với tài khoản</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon social-facebook">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="social-icon social-twiter">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="social-icon social-google">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                        <a href="#" class="social-icon social-likedin">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Bạn chưa có tài khoản ?</h3>
+                    <p>
+                        Trải nghiệm dịch vụ của chúng tôi bằng cách nhấn vào nút đăng ký bên dưới
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Đăng ký
+                    </button>
+                </div>
+                <img src="images/log.svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Bạn đã có tài khoản?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                        laboriosam ad deleniti.
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Đăng nhập
+                    </button>
+                </div>
+                <img src="images/register.svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <script>
+        // LOGIN REGISTER
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".container");
+
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+    </script>
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
