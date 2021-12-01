@@ -75,7 +75,7 @@ form.sign-in-form {
 }
 
 .input-field input {
-    width: 230px;
+    width: 90%;
     height: inherit;
     background: none;
     outline: none;
