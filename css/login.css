@@ -76,7 +76,6 @@ form.sign-in-form {
 
 .input-field input {
     width: 90%;
-    height: inherit;
     background: none;
     outline: none;
     border: none;
@@ -89,6 +88,17 @@ form.sign-in-form {
 .input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
+}
+
+.forget {
+    max-width: 380px;
+    width: 100%;
+    padding: 0 0.4rem;
+    margin: 10px 0;
+}
+
+.forget span {
+    color: var(--text-color);
 }
 
 .social-text {
@@ -209,12 +219,10 @@ form.sign-in-form {
 }
 
 .panel .content {
-    background-color: #fff;
-    color: rgb(78, 77, 77);
+    color: rgb(247, 247, 247);
     transition: transform 0.4s ease-in-out;
     transition-delay: 0.3s;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .panel h3 {
@@ -231,8 +239,8 @@ form.sign-in-form {
 .btn.transparent {
     margin: 0 auto;
     background: none;
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
+    color: #fff;
+    border: 1px solid #fff;
     width: 130px;
     height: 41px;
     font-weight: 600;
